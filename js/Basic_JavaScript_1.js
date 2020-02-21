@@ -28,3 +28,7 @@ var cat = cat.fontcolor('blue');
 document.write(gf + cat + me);
 
 3 + 3
+
+function displayDate() {
+    document.getElementById('demo').innerHTML = Date();
+}
