@@ -10,3 +10,8 @@ function myName() {
     name += ' Smith';
     document.getElementById('wholeName').innerHTML = name;
 }
+
+function textLarge() {
+    var x = document.getElementById("demo");
+    x.style.fontSize = 'xx-large';
+}
