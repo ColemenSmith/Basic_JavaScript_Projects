@@ -53,3 +53,16 @@ function triple_Equal() {
     document.write(two === three);
     document.write(three === four);
 }
+
+function and_OP() {
+    document.write(1 < 3 && 2 > 1);
+    document.write(1 < 2 || 2 < 1);
+}
+
+function not_OP() {
+    document.getElementById("not").innerHTML = !(15 < 5);
+}
+
+function not2_OP() {
+    document.getElementById("not2").innerHTML = !(20 > 5);
+}
