@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <p id="Loop"></p>
+    <button onclick="Call_Loop()">Click here to execute the loop.</button>
+
+    <p>Let's see how long this is.</p>
+    <button onclick="strLeng()">Click here</button>
+    <p id="length"></p>
+
+    <p id="List_of_Instruments"></p>
+    <button onclick="for_loop()">Click here</button>
+
+    <script src="./js/Basic_JavaScript_10.js"></script>
+
+    <p id="Array"></p>
+    <button onclick="array_Function()">Click here</button>
+
+    <p id="Constant"></p>
+    <button onclick="constant_Function()">Click here</button>
+
+    <p id="Time"></p>
+
+
+    <script>
+        function retFunc(time) {
+            return "It is " + time;
+        }
+        document.getElementById("Time").innerHTML = retFunc("Evening");
+    </script>
+</body>
+</html>
