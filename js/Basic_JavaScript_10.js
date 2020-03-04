@@ -49,4 +49,40 @@ document.write("<br>" + food);
 }
 document.write("<br>" + food);
 
+let house = {
+    size: "6000sq ft",
+    rooms: "3b",
+    bathrooms: "2 bath",
+    land: "2 acres",
+    garage: "2 car",
+    description : function() {
+        return "This house is " + this.size + ", it has " + this.rooms + " and " + this.bathrooms + ". The total land size is " + this.land + " and it has a " + this.garage + " garage.";
+    }
+};
 
+document.getElementById("house_object").innerHTML = house.description();
+
+var text = "";
+var i = 0;
+while (i < 10) {
+    text += "<br> The number is " + i;
+    i++;
+    if (i === 6) {
+        break;
+    }
+}
+
+document.getElementById("text").innerHTML = text;
+
+var strng = "";
+var friends = ["Tanner", "Tyler", "Cory", "Lance", "Kelsey"];
+var j;
+
+for (j = 0; j < friends.length; j++) {
+    if (friends[j] === "Tyler") {
+        continue;
+    }
+    strng += friends[j] + "<br>";
+}
+
+document.getElementById("texty").innerHTML = strng;
