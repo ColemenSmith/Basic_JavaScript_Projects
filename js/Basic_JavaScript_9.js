@@ -26,3 +26,17 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+function countdown() {
+    var sec = document.getElementById("seconds").value;
+
+    function tick() {
+        sec = sec - 1;
+        timer.innerHTML = sec;
+        setTimeout(tick, 1000);
+        if (sec == -1) {
+            alert("Time's up!")
+        }
+    }
+    tick();
+}
