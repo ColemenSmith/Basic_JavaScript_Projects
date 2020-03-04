@@ -68,7 +68,7 @@ while (i < 10) {
     text += "<br> The number is " + i;
     i++;
     if (i === 6) {
-        break;
+        break; // Break stops the loop at the specific item 
     }
 }
 
@@ -78,7 +78,7 @@ var strng = "";
 var friends = ["Tanner", "Tyler", "Cory", "Lance", "Kelsey"];
 var j;
 
-for (j = 0; j < friends.length; j++) {
+for (j = 0; j < friends.length; j++) { // continue skips over an item and then "Continues"
     if (friends[j] === "Tyler") {
         continue;
     }
